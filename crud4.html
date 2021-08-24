@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud5</title>
+</head>
+<body>
+    <h1>Add Employee Details</h1>
+    <input type="text" id="A">
+    <input type="text" id="B">
+    <input type="text" id="C">
+    <input type="text" id="D">
+    <button onclick="myFunction()">add</button>
+
+    <table border="1" id="myTable">
+        <tr>
+            <td>Employee id</td>
+            <td>Employee name</td>
+            <td>Age</td>
+            <td>Designation</td>
+        </tr>
+    </table>
+    <script>
+        function myFunction()
+        {
+            var tbl = document.getElementById("myTable");
+            var row = tbl.insertRow();
+            var cell1 = row.insertCell();
+            var cell2 = row.insertCell();
+            var cell3 = row.insertCell();
+            var cell4 = row.insertCell();
+            
+            cell1.innerHTML = document.getElementById("A").value;
+            cell2.innerHTML = document.getElementById("B").value;
+            cell3.innerHTML = document.getElementById("C").value;
+            cell4.innerHTML = document.getElementById("D").value;
+        }
+    </script>
+</body>
+</html>
